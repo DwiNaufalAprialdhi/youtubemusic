@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/global.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/img/youtube-music-logo-50422973B2-seeklogo.com.png"
+    />
+    <title>Youtube Music</title>
+  </head>
+  <body>
+    <div class="flex flex-col">
+      <div class="flex flex-1">
+        <!-- Navbar Start -->
+        <nav>
+          <!-- Menu Left Start -->
+          <div class="menu_left">
+            <img src="./assets/icons/menu.svg" alt="Menu" class="menu_svg" />
+            <img src="./assets/img/logo.svg" alt="Logo" class="logo_svg" />
+          </div>
+          <!-- Menu Left End -->
+
+          <!-- Menu Right Start -->
+          <div class="menu_right">
+            <div class="relative">
+              <input type="text" class="search" placeholder="Search ..." />
+              <img
+                src="./assets/icons/search.svg"
+                class="search_png"
+                alt="search"
+              />
+            </div>
+            <div class="lg:flex lg:items-center lg:gap-2">
+              <img src="./assets/icons/cast.svg" alt="Cast" class="cast_svg" />
+              <img
+                src="./assets/img/avatar.svg"
+                alt="Avatar"
+                class="avatar_svg"
+              />
+            </div>
+          </div>
+          <!-- Menu Right End -->
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- PlayBar Start -->
+        <div class="playbar">
+          <div class="menu_start">
+            <img src="./assets/icons/skip_previous.svg" alt="Prev" />
+            <img src="./assets/icons/play_arrow.svg" alt="Play" />
+            <img src="./assets/icons/skip_next.svg" alt="Next" />
+            <span class="time">0:10 / 3:41</span>
+          </div>
+          <div class="menu_center">
+            <img
+              src="./assets/img/Rectangle 2.svg"
+              alt="Album"
+              class="playbar_image"
+            />
+            <div class="playbar_menu">
+              <p class="playbar_title">
+                Looking For Love (Lee Dagger Dub Remix)
+              </p>
+              <span class="playbar_description">Listen Again</span>
+            </div>
+            <img
+              src="./assets/icons/play_arrow.svg"
+              alt="Play"
+              class="playbar_play"
+            />
+            <div class="menu_center_details">
+              <img src="./assets/icons/thumb_down.svg" alt="DisLike" />
+              <img src="./assets/icons/thumb_up.svg" alt="Like" />
+              <img src="./assets/icons/more_vert.svg" alt="More" />
+            </div>
+          </div>
+          <div class="menu_end">
+            <img src="./assets/icons/repeat.svg" alt="Repeat" />
+            <img src="./assets/icons/volume_up.svg" alt="UpVolume" />
+            <img src="./assets/icons/arrow_drop_down.svg" alt="Dropdown" />
+          </div>
+        </div>
+        <!-- ProgressBar Start -->
+        <div class="progressbar_bg">
+          <div style="width: 30%" class="progressbar_precentage"></div>
+        </div>
+        <!-- ProgressBar Start -->
+
+        <!-- PlayBar End -->
+
+        <!-- Overlay Mobile Start -->
+        <div class="overlay">
+          <a href="#">
+            <div class="overlay_menu">
+              <img
+                src="./assets/icons/other_houses.svg"
+                alt="Home"
+                class="overlay_menu_icon"
+              /><span class="overlay_menu_text">Home</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="overlay_menu">
+              <img
+                src="./assets/icons/explore.svg"
+                alt="Explore"
+                class="overlay_menu_icon"
+              /><span class="overlay_menu_text">Explore</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="overlay_menu">
+              <img
+                src="./assets/icons/library_music.svg"
+                alt="Library"
+                class="overlay_menu_icon"
+              /><span class="overlay_menu_text">Library</span>
+            </div>
+          </a>
+        </div>
+        <!-- Overlay Mobile End -->
+
+        <!-- SideBar Start -->
+        <div class="sidebar">
+          <div class="sidebar_menu">
+            <img
+              src="./assets/icons/coolicon.svg"
+              alt="icon"
+              class="coolicon_svg"
+            />
+            <span class="sidebar_menu_text">Home</span>
+            <img
+              src="./assets/icons/dropdown.svg"
+              alt="Dropdown"
+              class="dropdown_svg"
+            />
+          </div>
+          <div class="sidebar_menu2">
+            <img
+              src="./assets/icons/coolicon.svg"
+              alt="icon"
+              class="coolicon_svg"
+            />
+            <span class="sidebar_menu_text">Home</span>
+            <img
+              src="./assets/icons/dropdown.svg"
+              alt="Dropdown"
+              class="dropdown_svg2"
+            />
+          </div>
+          <div class="sidebar_menu3">
+            <img
+              src="./assets/icons/coolicon.svg"
+              alt="icon"
+              class="coolicon_svg"
+            />
+            <span class="sidebar_menu_text">Home</span>
+            <img
+              src="./assets/icons/dropdown.svg"
+              alt="Dropdown"
+              class="dropdown_svg3"
+            />
+          </div>
+          <div class="sidebar_menu_details">
+            <hr />
+            <a href="#">
+              <div class="new_playlist">
+                <img src="./assets/icons/coolicon.svg" alt="icon" />
+                <span class="new_playlist_text">New Playlist</span>
+              </div>
+            </a>
+            <div class="overflow-y-auto h-80 mt-6">
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+              <div class="flex flex-col py-2 px-3">
+                <span class="your_likes">Your Likes</span>
+                <span class="autoplaylist">Autoplaylist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- SideBar End -->
+
+        <!-- Content Start -->
+        <div class="content">
+          <!-- Tab Bar Start -->
+          <div class="tabBar">
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+            <button class="tabBar_button">
+              <span class="tabBar_buttonText">Home</span>
+            </button>
+          </div>
+          <!-- Tab Bar End -->
+
+          <!-- FirstSong Start -->
+          <div class="firstsong">
+            <div class="flex items-center gap-3">
+              <div class="flex items-center w-full gap-3">
+                <img
+                  src="./assets/img/avatar.svg"
+                  alt="avatar"
+                  class="firstsong_avatar"
+                />
+                <div class="flex flex-col w-full">
+                  <span class="firstsong_title">Sufyan Ali</span>
+                  <span class="firstsong_desc">Listen Again</span>
+                </div>
+              </div>
+              <div class="firstsong_prevnext">
+                <button id="prev_slide" class="slide_button">
+                  <img src="./assets/icons/prev.svg" alt="prev" />
+                </button>
+
+                <button id="next_slide" class="slide_button">
+                  <img src="./assets/icons/next.svg" alt="next" />
+                </button>
+              </div>
+            </div>
+
+            <div class="firstsong_cardlist">
+              <img src="./assets/img/starboy.svg" alt="" />
+              <img src="./assets/img/dj.svg" alt="" />
+              <img src="./assets/img/anja.svg" alt="" />
+              <img src="./assets/img/starboy.svg" alt="" />
+              <img src="./assets/img/dj.svg" alt="" />
+              <img src="./assets/img/anja.svg" alt="" />
+              <img src="./assets/img/starboy.svg" alt="" />
+              <img src="./assets/img/dj.svg" alt="" />
+              <img src="./assets/img/anja.svg" alt="" />
+            </div>
+          </div>
+          <!-- FirstSong End -->
+
+          <!-- SecSong Start -->
+          <div class="secsong">
+            <div class="secsong_header">
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/img/avatar.svg"
+                  alt="avatar"
+                  class="secsong_avatar"
+                />
+                <div class="flex flex-col">
+                  <h2 class="secsong_title">Start Radio From A Song</h2>
+                  <h3 class="secsong_desc">Quick picks</h3>
+                </div>
+              </div>
+              <button class="secsong_button">Play all</button>
+            </div>
+            <div class="secsong_cardlist">
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/happy.svg"
+                    alt="happy"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Happy</h2>
+                    <h3 class="secsong_carddesc">
+                      Robbie Williams . Listen again
+                    </h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/lovestory.svg"
+                    alt="lovestory"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Love Story</h2>
+                    <h3 class="secsong_carddesc">Jhon Lennon</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/snow.svg"
+                    alt="snow"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Smooth</h2>
+                    <h3 class="secsong_carddesc">Coldplay</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/samsmith.svg"
+                    alt="samsmith"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Hey, Soul Sister</h2>
+                    <h3 class="secsong_carddesc">Sam Smith . Listen Again</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/jessiej.svg"
+                    alt="jessiej"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Cheap Thrills</h2>
+                    <h3 class="secsong_carddesc">Jessie J . Listen Again</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/iwill.svg"
+                    alt="iwill"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">I Will Always Love You</h2>
+                    <h3 class="secsong_carddesc">Coldplay</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/igotta.svg"
+                    alt="igotta"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">I Gotta Feeling</h2>
+                    <h3 class="secsong_carddesc">George Michael</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/happy.svg"
+                    alt="happy"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Happy</h2>
+                    <h3 class="secsong_carddesc">
+                      Robbie Williams . Listen again
+                    </h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/lovestory.svg"
+                    alt="lovestory"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Love Story</h2>
+                    <h3 class="secsong_carddesc">Jhon Lennon</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/snow.svg"
+                    alt="snow"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Smooth</h2>
+                    <h3 class="secsong_carddesc">Coldplay</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/samsmith.svg"
+                    alt="samsmith"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Hey, Soul Sister</h2>
+                    <h3 class="secsong_carddesc">Sam Smith . Listen Again</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/jessiej.svg"
+                    alt="jessiej"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">Cheap Thrills</h2>
+                    <h3 class="secsong_carddesc">Jessie J . Listen Again</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/iwill.svg"
+                    alt="iwill"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">I Will Always Love You</h2>
+                    <h3 class="secsong_carddesc">Coldplay</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+              <div
+                class="flex items-center justify-between lg:justify-start lg:col-span-4 lg:w-full"
+              >
+                <div class="flex gap-2 items-center">
+                  <img
+                    src="./assets/img/igotta.svg"
+                    alt="igotta"
+                    class="secsong_image"
+                  />
+                  <div class="flex flex-col">
+                    <h2 class="secsong_cardtitle">I Gotta Feeling</h2>
+                    <h3 class="secsong_carddesc">George Michael</h3>
+                  </div>
+                </div>
+                <img
+                  src="./assets/icons/more_vert.svg"
+                  alt="more"
+                  class="lg:hidden"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- SecSong End -->
+
+          <!-- ThirdSong Start -->
+          <div class="thirdsong">
+            <div class="flex justify-between items-center w-full">
+              <div class="flex gap-2 lg:gap-3 items-center w-full">
+                <img
+                  src="./assets/img/avatar.svg"
+                  alt="avatar"
+                  class="thirdsong_avatar"
+                />
+                <h2 class="thirdsong_title">Recomended albums</h2>
+              </div>
+              <div class="thirdsong_prevnext">
+                <button
+                  id="thirdsong_prev_slide"
+                  class="thirdsong_slide_button"
+                >
+                  <img src="./assets/icons/prev.svg" alt="prev" />
+                </button>
+
+                <button
+                  id="thirdsong_next_slide"
+                  class="thirdsong_slide_button"
+                >
+                  <img src="./assets/icons/next.svg" alt="next" />
+                </button>
+              </div>
+            </div>
+            <div class="thirdsong_cardlist">
+              <img src="./assets/img/recomended1.svg" alt="" />
+              <img src="./assets/img/recomended2.svg" alt="" />
+              <img src="./assets/img/recomended3.svg" alt="" />
+              <img src="./assets/img/recomended4.svg" alt="" />
+              <img src="./assets/img/recomended5.svg" alt="" />
+              <img src="./assets/img/recomended1.svg" alt="" />
+              <img src="./assets/img/recomended2.svg" alt="" />
+              <img src="./assets/img/recomended3.svg" alt="" />
+              <img src="./assets/img/recomended4.svg" alt="" />
+              <img src="./assets/img/recomended5.svg" alt="" />
+            </div>
+          </div>
+          <!-- ThirdSong End -->
+        </div>
+        <!-- Content End -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>

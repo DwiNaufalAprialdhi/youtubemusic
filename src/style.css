@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply font-inter bg-black text-white;
+    }
+    nav {
+        @apply fixed w-full py-4 px-3 lg:py-6 lg:px-0 flex z-50 bg-black items-center;
+    }
+}
+
+@layer components {
+
+    /* Navbar Class */
+    .menu_left {
+        @apply w-[120px] lg:w-[232px] lg:px-12 flex lg:items-center lg:gap-4;
+    }
+    .menu_svg {
+        @apply hidden lg:block cursor-pointer hover:scale-125 transition-all duration-300;
+    }
+    .logo_svg {
+        @apply w-[80px] h-6 lg:w-[107px] lg:h-8 cursor-pointer;
+    }
+    .menu_right {
+        @apply flex flex-row justify-between w-full items-center lg:px-12 lg:w-full lg:flex lg:items-center lg:justify-between;
+    }
+    .search {
+        @apply w-[212px] bg-[#282828CC] opacity-80 py-1 px-2 rounded-lg pr-11 lg:p-3 lg:rounded-lg lg:bg-[#282828CC] lg:w-[416px] lg:opacity-80 lg:pl-11;
+    }
+    .search_png {
+        @apply absolute right-2 top-1 lg:left-3 lg:top-3 lg:opacity-50;
+    }
+    .cast_svg {
+        @apply hidden lg:block cursor-pointer;
+    }
+    .avatar_svg {
+        @apply cursor-pointer w-6 h-6 lg:w-12 lg:h-12;
+    }
+
+    /* Playbar Class */
+    .playbar {
+        @apply fixed bottom-[76px] w-full bg-[#282828] py-4 px-3 flex flex-row gap-2 items-center justify-center lg:bottom-0 z-[150] lg:justify-between;
+    }
+    .menu_start {
+        @apply hidden lg:flex flex-row gap-2 items-center;
+    }
+    .time {
+        @apply text-sm font-normal leading-6 text-[#D9D9D9B2] opacity-70;
+    }
+    .menu_center {
+        @apply flex flex-row gap-2 justify-center items-center;
+    }
+    .menu_center_details {
+        @apply hidden ml-[139px] lg:flex flex-row items-center gap-4;
+    }
+    .menu_end {
+        @apply hidden lg:flex flex-row gap-2 items-center;
+    }
+    .playbar_menu {
+        @apply truncate;
+    }
+    .playbar_title {
+        @apply truncate text-sm font-semibold leading-normal tracking-tight;
+    }
+    .playbar_description {
+        @apply text-xs font-normal leading-normal;
+    }
+    .playbar_play {
+        @apply lg:hidden
+    }
+    .progressbar_bg {
+        @apply bg-gray-700 rounded overflow-hidden fixed bottom-[74px] z-[999] w-full h-[2px];
+    }
+    .progressbar_precentage {
+        @apply bg-[#FF0000] rounded-sm p-[2px];
+    }
+
+    /* Overlay Class */
+    .overlay {
+        @apply fixed bottom-0 p-3 flex flex-row justify-center items-center bg-black w-full gap-14 z-[999] lg:hidden;
+    }
+    .overlay_menu {
+        @apply flex flex-col justify-center items-center gap-[2px];
+    }
+    .overlay_menu_text {
+        @apply text-sm font-normal leading-6;
+    }
+
+    /* SideBar Class */
+    .sidebar {
+        @apply hidden lg:flex flex-col bg-black border-r-[1px] pt-[120px] w-[88px] h-screen p-4 gap-4 sticky top-0 transition-all duration-300;
+    }
+    .sidebar_active {
+        @apply w-[232px];
+    }
+    .sidebar_menu {
+        @apply bg-[#282828] w-full rounded-md flex flex-col items-center justify-center p-3 gap-1 transition-all duration-300 cursor-pointer;
+    }
+    .sidebar_menu2 {
+        @apply bg-[#282828] w-full rounded-md flex flex-col items-center justify-center p-3 gap-1 transition-all duration-300 cursor-pointer;
+    }
+    .sidebar_menu3 {
+        @apply bg-[#282828] w-full rounded-md flex flex-col items-center justify-center p-3 gap-1 transition-all duration-300 cursor-pointer;
+    }
+    .sidebar_menu_active {
+        @apply bg-[#282828] w-full rounded-md flex flex-row items-center justify-start p-3 gap-3 transition-all duration-300;
+    }
+    .sidebar_menu_text {
+        @apply font-semibold text-[10px] leading-normal;
+    }
+    .dropdown_svg {
+        @apply hidden;
+    }
+    .dropdown_svg2 {
+        @apply hidden;
+    }
+    .dropdown_svg3 {
+        @apply hidden;
+    }
+    .dropdown_svg_active {
+        @apply block ml-9;
+    }
+    .sidebar_menu_details {
+        @apply hidden;
+    }
+    .sidebar_menu_details_active {
+        @apply block transition-all duration-300;
+    }
+    .new_playlist {
+        @apply p-3 bg-[#282828] flex flex-row gap-3 mt-6 rounded-full;
+    }
+    .new_playlist_text {
+        @apply text-sm font-semibold leading-6;
+    }
+    .your_likes {
+        @apply text-sm font-semibold leading-6;
+    }
+    .autoplaylist {
+        @apply text-xs font-normal leading-normal;
+    }
+    
+    /* Content Class */
+    .content {
+        @apply bg-transparent px-3 w-full mt-20 lg:mt-[96px] lg:ml-[48px] lg:mr-[92px] lg:px-0;
+    }
+
+    /* TabBar Class */
+    .tabBar {
+        @apply flex gap-[10px] overflow-x-auto lg:max-w-[1040px] py-3 px-0 lg:py-6 ;
+    }
+    .tabBar_button {
+        @apply py-1 px-2 rounded-lg bg-[#282828] hover:bg-white hover:text-black lg:py-[6px] lg:px-4;
+    }
+    .tabBar_buttonActive {
+        @apply bg-white text-black;
+    }
+    .tabBar_buttonText {
+        @apply text-xs font-normal leading-6 tracking-tight;
+    }
+
+    /* Firts Song Class */
+    .firstsong {
+        @apply flex flex-col mt-[10px] gap-4 lg:mt-7 lg:gap-6;
+    }
+    .firstsong_avatar {
+        @apply w-8 h-8 lg:w-12 lg:h-12;
+    }
+    .firstsong_title {
+        @apply text-xs font-normal leading-normal lg:text-base lg:leading-6;
+    }
+    .firstsong_desc {
+        @apply text-base font-bold leading-normal lg:text-2xl lg:leading-6;
+    }
+    .firstsong_prevnext {
+        @apply hidden lg:flex gap-2 w-full justify-end;
+    }
+    .firstsong_cardlist {
+        @apply flex flex-row items-center w-full gap-2 overflow-x-scroll pb-5 lg:gap-9;
+    }
+    .slide_button {
+        @apply w-10 h-10;
+    }
+    .firstsong_card{
+        @apply flex flex-col gap-2 lg:gap-3;
+    }
+    .firstsong_cardimage {
+        @apply w-[104px] lg:w-[180px] object-cover;
+    }
+    .fisrtsong_cardtitle {
+        @apply text-xs font-medium leading-normal lg:text-base lg:font-bold;
+    }
+    .firstsong_carddesc {
+        @apply hidden lg:block text-base font-normal leading-normal opacity-70;
+    }
+
+    /* Sec Song Class */
+    .secsong {
+        @apply flex flex-col gap-3 mt-8 lg:gap-5 lg:mt-16;
+    }
+    .secsong_header {
+        @apply flex items-center justify-between w-full;
+    }
+    .secsong_avatar {
+        @apply w-8 h-8 lg:w-12 lg:h-12; 
+    }
+    .secsong_title {
+        @apply text-xs font-normal leading-normal lg:text-base lg:leading-6 uppercase;
+    }
+    .secsong_desc {
+        @apply text-base font-bold leading-normal lg:text-2xl lg:leading-6;
+    }
+    .secsong_button {
+        @apply border rounded-full py-1 px-4 text-[10px] font-semibold leading-6 lg:py-2 lg:px-8 lg:text-xs;
+    }
+    .secsong_cardlist {
+        @apply flex flex-col overflow-y-scroll h-48 gap-2 lg:h-48 lg:grid lg:grid-cols-12 lg:overflow-x-scroll lg:w-full;
+    }
+    .secsong_image {
+        @apply w-10 h-10 lg:w-12 lg:h-12;
+    }
+    .secsong_cardtitle {
+        @apply text-sm font-semibold leading-normal lg:text-base lg:font-bold;
+    }
+    .secsong_carddesc {
+        @apply text-xs font-normal leading-normal lg:text-base;
+    }
+
+    /* Third Song Class */
+    .thirdsong {
+        @apply flex flex-col gap-6 mt-8 lg:mt-16 mb-52;
+    }
+    .thirdsong_avatar {
+        @apply w-8 h-8 lg:w-12 lg:h-12;
+    }
+    .thirdsong_title {
+        @apply text-base font-bold leading-normal lg:text-2xl lg:leading-6;
+    }
+    .thirdsong_prevnext {
+        @apply hidden lg:flex gap-2 w-full justify-end;
+    }
+    .thirdsong_cardlist {
+        @apply flex flex-row items-center w-full gap-2 overflow-x-scroll pb-5 lg:gap-9;
+    }
+
+}
